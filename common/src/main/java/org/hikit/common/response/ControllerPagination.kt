@@ -22,8 +22,8 @@ object ControllerPagination {
 
     fun checkSkipLim(skip: Int, limit: Int) {
         if (limit <= 0)
-            throw IllegalArgumentException("Limit must be positive!")
-        if (limit < skip)
-            throw IllegalArgumentException("Limit must be greater than skip!")
+            throw IllegalArgumentException("Limit must be positive")
+        if (skip < 0)
+            throw IllegalArgumentException("Skip must be a value greater than 0")
     }
 }

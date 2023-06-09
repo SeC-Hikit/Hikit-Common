@@ -25,17 +25,25 @@ class ControllerPaginationTest {
         assertEquals(3, ControllerPagination.getCurrentPage(29, 10))
     }
 
-    @Test
-    fun `shall throw exception`() {
-        assertFailsWith<IllegalArgumentException> {
-            checkSkipLim(20, 10)
-        }
-    }
 
     @Test
     fun `shall throw exception if limit equals to zero`() {
         assertFailsWith<IllegalArgumentException> {
             checkSkipLim(20, 0)
+        }
+    }
+
+    @Test
+    fun `shall throw exception if limit equals to zero and skip zero`() {
+        assertFailsWith<IllegalArgumentException> {
+            checkSkipLim(0, 0)
+        }
+    }
+
+    @Test
+    fun `shall throw exception if skip lower than zero`() {
+        assertFailsWith<IllegalArgumentException> {
+            checkSkipLim(-1, 0)
         }
     }
 
