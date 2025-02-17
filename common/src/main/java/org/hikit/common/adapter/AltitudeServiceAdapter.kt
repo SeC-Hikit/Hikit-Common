@@ -22,8 +22,8 @@ const val ALTITUDE_CALL_CHUNK_SIZE = 500
 
 @Service
 class AltitudeServiceAdapter @Autowired constructor(private val objectMapper: ObjectMapper,
-                                                    @Value("\${microservice.oa.port:8080") private val portToAltitudeService : Int,
-                                                    @Value("\${microservice.oa.host:127.0.0.1") private val hostToAltitudeService : String) {
+                                                    @Value("\${microservice.oa.port:8080}") private val portToAltitudeService : Int,
+                                                    @Value("\${microservice.oa.host:127.0.0.1}") private val hostToAltitudeService : String) {
 
     private val logger: Logger = Logger.getLogger(AltitudeServiceAdapter::class.java.name)
     private val pathToServiceApi: String = "$hostToAltitudeService:$portToAltitudeService/api/v1/lookup"
