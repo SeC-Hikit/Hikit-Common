@@ -18,6 +18,7 @@
         <mongo-java-driver.version>3.12.8</mongo-java-driver.version>
         <junit.version>4.13.2</junit.version>
         <jackson-databind.version>2.18.2</jackson-databind.version>
+        <mockk.version>1.12.3</mockk.version>
     </properties>
 
     <dependencies>
@@ -57,6 +58,11 @@
             <artifactId>kotlin-test</artifactId>
             <version>${kotlin.version}</version>
             <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>io.mockk</groupId>
+            <artifactId>mockk</artifactId>
+            <version>${mockk.version}</version>
         </dependency>
     </dependencies>
 
