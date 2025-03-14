@@ -1,9 +1,9 @@
 package org.hikit.common.dto
 
 data class MatchingResponse (
-    val results : List<TrailToScore>
+    val results : Set<TrailToScore>
 )
 
-data class TrailToScore(val trail: Trail,
-                        val score: Int)
+data class TrailToScore(val trailData: Trail,
+                        val accuracy: Int)
 
