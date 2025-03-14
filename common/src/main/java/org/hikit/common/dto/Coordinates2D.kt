@@ -11,6 +11,5 @@ class Coordinates2D(
         longitude = coordinates[0]
         latitude = coordinates[1]
     }
-
 }
 
