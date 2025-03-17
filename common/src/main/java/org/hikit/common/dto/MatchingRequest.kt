@@ -16,3 +16,8 @@ data class StatsTrailMetadata(
     val highest: Double,
     val lowest: Double,
 )
+
+data class Geometry (
+    val type : String,
+    val coordinates: List<List<Double>>
+)
