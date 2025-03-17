@@ -4,6 +4,6 @@ data class MatchingResponse (
     val results : List<TrailToScore>
 )
 
-data class TrailToScore(val trail: Trail,
-                        val score: Int)
+data class TrailToScore(val trailData: Trail,
+                        val accuracy: Int)
 

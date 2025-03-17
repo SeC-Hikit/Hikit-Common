@@ -1,8 +1,10 @@
 package org.hikit.common.dto
 
+import org.hikit.common.processor.Coordinates
+
 data class MatchingRequest (
     val code: String,
-    val geometry: GeometryParent,
+    val coordinates: List<Coordinates>,
     val metadata: StatsTrailMetadata,
 )
 
@@ -13,10 +15,6 @@ data class StatsTrailMetadata(
     val totalEta: Double,
     val highest: Double,
     val lowest: Double,
-)
-
-data class GeometryParent (
-    val geoline : Geometry
 )
 
 data class Geometry (
