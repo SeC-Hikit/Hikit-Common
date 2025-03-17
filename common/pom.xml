@@ -9,8 +9,6 @@
     <version>1.2</version>
 
     <properties>
-        <maven.compiler.source>11</maven.compiler.source>
-        <maven.compiler.target>11</maven.compiler.target>
         <kotlin.version>1.6.0</kotlin.version>
         <spring-context.version>6.1.13</spring-context.version>
         <mongodb-driver-sync.version>4.8.2</mongodb-driver-sync.version>
