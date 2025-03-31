@@ -19,5 +19,5 @@ data class StatsTrailMetadata(
 
 data class Geometry (
     val type : String,
-    val coordinates: List<List<List<Double>>>
+    val coordinates: List<Coordinates2D>
 )
