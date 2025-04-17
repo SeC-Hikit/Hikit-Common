@@ -1,10 +1,8 @@
 package org.hikit.common.dto
 
-import org.hikit.common.processor.Coordinates
-
 data class MatchingRequest (
     val code: String,
-    val coordinates: List<Coordinates>,
+    val coordinates: List<CoordinatesDto>,
     val metadata: StatsTrailMetadata,
 )
 
