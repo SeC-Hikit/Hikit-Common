@@ -5,5 +5,5 @@ data class MatchingResponse (
 )
 
 data class TrailToScore(val trailData: Trail,
-                        val accuracy: Int)
+                        val accuracy: Double)
 
